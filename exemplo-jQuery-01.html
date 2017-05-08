@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo jQuery </title>
+
+  <script type="text/javascript">
+    //Aparece o alert antes de carregar a tela!!
+    //alert("Teste de carga HTML!");
+  </script>
+
+   <script type="text/javascript"
+   src="assets/js/jquery-3.2.1.js"></script>
+
+   <script type="text/javascript">
+//Aparece o alert durante o carregamento da tela!!
+  $(document).ready(function(){
+  alert ("Teste sde carga HTML!");
+  $("#iData").css("background-color", "#ff0000")
+});
+    </script>
+  </head>
+  <body>
+    <form action="#" method="get">
+
+      <fieldset>
+
+        <legend>Exemplo</legend>
+        <div >
+         <input type="date" name="tData" value="">
+        </div>
+
+        <div >
+         <label for ="">Nome</label><br>
+         <input type="text" name="name">
+        </div>
+
+        <div >
+        <label for="">Sobrenome</label><br>
+        <input type="text" name="sobrenome"><br><br>
+        <button type="button" name="button">Enviar</button>
+        </div>
+
+      </fieldset>
+
+    </form>
+  </body>
+</html>
